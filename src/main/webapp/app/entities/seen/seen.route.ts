@@ -56,7 +56,7 @@ export const seenPopupRoute: Routes = [
         path: 'seen/:id/delete',
         component: SeenDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.seen.home.title'
         },
         canActivate: [UserRouteAccessService],

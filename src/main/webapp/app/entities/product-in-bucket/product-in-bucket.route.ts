@@ -56,7 +56,7 @@ export const productInBucketPopupRoute: Routes = [
         path: 'product-in-bucket/:id/delete',
         component: ProductInBucketDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.productInBucket.home.title'
         },
         canActivate: [UserRouteAccessService],

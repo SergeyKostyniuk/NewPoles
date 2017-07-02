@@ -56,7 +56,7 @@ export const addressPopupRoute: Routes = [
         path: 'address/:id/delete',
         component: AddressDeletePopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.address.home.title'
         },
         canActivate: [UserRouteAccessService],

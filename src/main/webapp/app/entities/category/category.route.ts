@@ -56,7 +56,7 @@ export const categoryPopupRoute: Routes = [
         path: 'category/:id/delete',
         component: CategoryDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.category.home.title'
         },
         canActivate: [UserRouteAccessService],

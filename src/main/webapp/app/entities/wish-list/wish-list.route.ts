@@ -56,7 +56,7 @@ export const wishListPopupRoute: Routes = [
         path: 'wish-list/:id/delete',
         component: WishListDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.wishList.home.title'
         },
         canActivate: [UserRouteAccessService],

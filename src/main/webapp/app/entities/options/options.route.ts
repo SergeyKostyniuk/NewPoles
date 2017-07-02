@@ -56,7 +56,7 @@ export const optionsPopupRoute: Routes = [
         path: 'options/:id/delete',
         component: OptionsDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.options.home.title'
         },
         canActivate: [UserRouteAccessService],

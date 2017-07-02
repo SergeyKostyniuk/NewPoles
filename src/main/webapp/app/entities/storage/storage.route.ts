@@ -56,7 +56,7 @@ export const storagePopupRoute: Routes = [
         path: 'storage/:id/delete',
         component: StorageDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.storage.home.title'
         },
         canActivate: [UserRouteAccessService],

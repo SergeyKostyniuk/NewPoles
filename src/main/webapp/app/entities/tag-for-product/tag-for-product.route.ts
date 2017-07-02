@@ -56,7 +56,7 @@ export const tagForProductPopupRoute: Routes = [
         path: 'tag-for-product/:id/delete',
         component: TagForProductDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.tagForProduct.home.title'
         },
         canActivate: [UserRouteAccessService],

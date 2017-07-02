@@ -56,7 +56,7 @@ export const staticPagesPopupRoute: Routes = [
         path: 'static-pages/:id/delete',
         component: StaticPagesDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.staticPages.home.title'
         },
         canActivate: [UserRouteAccessService],

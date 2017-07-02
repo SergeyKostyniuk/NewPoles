@@ -56,7 +56,7 @@ export const personalInformationPopupRoute: Routes = [
         path: 'personal-information/:id/delete',
         component: PersonalInformationDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.personalInformation.home.title'
         },
         canActivate: [UserRouteAccessService],

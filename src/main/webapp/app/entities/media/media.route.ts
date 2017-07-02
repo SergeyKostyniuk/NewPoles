@@ -56,7 +56,7 @@ export const mediaPopupRoute: Routes = [
         path: 'media/:id/delete',
         component: MediaDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.media.home.title'
         },
         canActivate: [UserRouteAccessService],

@@ -56,7 +56,7 @@ export const avatarPopupRoute: Routes = [
         path: 'avatar/:id/delete',
         component: AvatarDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.avatar.home.title'
         },
         canActivate: [UserRouteAccessService],

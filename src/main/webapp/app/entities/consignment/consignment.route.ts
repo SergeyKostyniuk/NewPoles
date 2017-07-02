@@ -56,7 +56,7 @@ export const consignmentPopupRoute: Routes = [
         path: 'consignment/:id/delete',
         component: ConsignmentDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.consignment.home.title'
         },
         canActivate: [UserRouteAccessService],

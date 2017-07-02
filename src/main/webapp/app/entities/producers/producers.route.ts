@@ -56,7 +56,7 @@ export const producersPopupRoute: Routes = [
         path: 'producers/:id/delete',
         component: ProducersDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.producers.home.title'
         },
         canActivate: [UserRouteAccessService],

@@ -56,7 +56,7 @@ export const managerPopupRoute: Routes = [
         path: 'manager/:id/delete',
         component: ManagerDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.manager.home.title'
         },
         canActivate: [UserRouteAccessService],

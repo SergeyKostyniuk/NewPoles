@@ -56,7 +56,7 @@ export const addressShippingPopupRoute: Routes = [
         path: 'address-shipping/:id/delete',
         component: AddressShippingDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.addressShipping.home.title'
         },
         canActivate: [UserRouteAccessService],

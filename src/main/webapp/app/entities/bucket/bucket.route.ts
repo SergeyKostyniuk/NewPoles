@@ -56,7 +56,7 @@ export const bucketPopupRoute: Routes = [
         path: 'bucket/:id/delete',
         component: BucketDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.bucket.home.title'
         },
         canActivate: [UserRouteAccessService],

@@ -56,7 +56,7 @@ export const commentsPopupRoute: Routes = [
         path: 'comments/:id/delete',
         component: CommentsDeletePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_MANAGER'],
             pageTitle: 'dtoApp.comments.home.title'
         },
         canActivate: [UserRouteAccessService],

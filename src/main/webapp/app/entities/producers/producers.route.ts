@@ -24,7 +24,7 @@ export const producersRoute: Routes = [
         path: 'producers/:id',
         component: ProducersDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.producers.home.title'
         },
         canActivate: [UserRouteAccessService]

@@ -24,7 +24,7 @@ export const productsRoute: Routes = [
         path: 'products/:id',
         component: ProductsDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.products.home.title'
         },
         canActivate: [UserRouteAccessService]

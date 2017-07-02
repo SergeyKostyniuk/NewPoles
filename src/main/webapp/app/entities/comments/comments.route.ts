@@ -24,7 +24,7 @@ export const commentsRoute: Routes = [
         path: 'comments/:id',
         component: CommentsDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.comments.home.title'
         },
         canActivate: [UserRouteAccessService]

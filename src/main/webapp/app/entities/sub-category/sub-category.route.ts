@@ -24,7 +24,7 @@ export const subCategoryRoute: Routes = [
         path: 'sub-category/:id',
         component: SubCategoryDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.subCategory.home.title'
         },
         canActivate: [UserRouteAccessService]

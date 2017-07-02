@@ -24,7 +24,7 @@ export const tagsRoute: Routes = [
         path: 'tags/:id',
         component: TagsDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.tags.home.title'
         },
         canActivate: [UserRouteAccessService]

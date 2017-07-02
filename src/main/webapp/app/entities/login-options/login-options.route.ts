@@ -24,7 +24,7 @@ export const loginOptionsRoute: Routes = [
         path: 'login-options/:id',
         component: LoginOptionsDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.loginOptions.home.title'
         },
         canActivate: [UserRouteAccessService]

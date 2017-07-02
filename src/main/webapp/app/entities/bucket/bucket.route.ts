@@ -24,7 +24,7 @@ export const bucketRoute: Routes = [
         path: 'bucket/:id',
         component: BucketDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.bucket.home.title'
         },
         canActivate: [UserRouteAccessService]

@@ -24,7 +24,7 @@ export const avatarRoute: Routes = [
         path: 'avatar/:id',
         component: AvatarDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.avatar.home.title'
         },
         canActivate: [UserRouteAccessService]

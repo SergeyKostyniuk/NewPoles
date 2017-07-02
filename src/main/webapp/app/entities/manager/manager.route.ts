@@ -24,7 +24,7 @@ export const managerRoute: Routes = [
         path: 'manager/:id',
         component: ManagerDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.manager.home.title'
         },
         canActivate: [UserRouteAccessService]

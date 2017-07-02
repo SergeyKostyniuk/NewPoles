@@ -24,7 +24,7 @@ export const productInBucketRoute: Routes = [
         path: 'product-in-bucket/:id',
         component: ProductInBucketDetailComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.productInBucket.home.title'
         },
         canActivate: [UserRouteAccessService]

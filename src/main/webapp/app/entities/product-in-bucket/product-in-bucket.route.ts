@@ -36,7 +36,7 @@ export const productInBucketPopupRoute: Routes = [
         path: 'product-in-bucket-new',
         component: ProductInBucketPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.productInBucket.home.title'
         },
         canActivate: [UserRouteAccessService],

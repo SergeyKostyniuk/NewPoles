@@ -36,7 +36,7 @@ export const mediaPopupRoute: Routes = [
         path: 'media-new',
         component: MediaPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.media.home.title'
         },
         canActivate: [UserRouteAccessService],

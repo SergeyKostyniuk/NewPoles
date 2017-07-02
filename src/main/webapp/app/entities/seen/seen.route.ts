@@ -36,7 +36,7 @@ export const seenPopupRoute: Routes = [
         path: 'seen-new',
         component: SeenPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.seen.home.title'
         },
         canActivate: [UserRouteAccessService],

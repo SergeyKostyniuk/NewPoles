@@ -36,7 +36,7 @@ export const productsPopupRoute: Routes = [
         path: 'products-new',
         component: ProductsPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.products.home.title'
         },
         canActivate: [UserRouteAccessService],

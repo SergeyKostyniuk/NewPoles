@@ -36,7 +36,7 @@ export const categoryPopupRoute: Routes = [
         path: 'category-new',
         component: CategoryPopupComponent,
         data: {
-           authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.category.home.title'
         },
         canActivate: [UserRouteAccessService],

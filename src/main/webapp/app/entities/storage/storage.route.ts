@@ -36,7 +36,7 @@ export const storagePopupRoute: Routes = [
         path: 'storage-new',
         component: StoragePopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.storage.home.title'
         },
         canActivate: [UserRouteAccessService],

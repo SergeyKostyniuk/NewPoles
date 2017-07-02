@@ -36,7 +36,7 @@ export const loginOptionsPopupRoute: Routes = [
         path: 'login-options-new',
         component: LoginOptionsPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.loginOptions.home.title'
         },
         canActivate: [UserRouteAccessService],

@@ -36,7 +36,7 @@ export const tagsPopupRoute: Routes = [
         path: 'tags-new',
         component: TagsPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.tags.home.title'
         },
         canActivate: [UserRouteAccessService],

@@ -36,7 +36,7 @@ export const managerPopupRoute: Routes = [
         path: 'manager-new',
         component: ManagerPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.manager.home.title'
         },
         canActivate: [UserRouteAccessService],

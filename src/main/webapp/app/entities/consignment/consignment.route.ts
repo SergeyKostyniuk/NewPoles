@@ -36,7 +36,7 @@ export const consignmentPopupRoute: Routes = [
         path: 'consignment-new',
         component: ConsignmentPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.consignment.home.title'
         },
         canActivate: [UserRouteAccessService],

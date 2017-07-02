@@ -36,7 +36,7 @@ export const producersPopupRoute: Routes = [
         path: 'producers-new',
         component: ProducersPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.producers.home.title'
         },
         canActivate: [UserRouteAccessService],

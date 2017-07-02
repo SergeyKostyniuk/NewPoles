@@ -16,7 +16,7 @@ export const staticPagesRoute: Routes = [
         path: 'static-pages',
         component: StaticPagesComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.staticPages.home.title'
         },
         canActivate: [UserRouteAccessService]

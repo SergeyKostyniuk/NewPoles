@@ -16,7 +16,7 @@ export const wishListRoute: Routes = [
         path: 'wish-list',
         component: WishListComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.wishList.home.title'
         },
         canActivate: [UserRouteAccessService]

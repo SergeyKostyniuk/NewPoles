@@ -16,7 +16,7 @@ export const tagsRoute: Routes = [
         path: 'tags',
         component: TagsComponent,
         data: {
-            authorities: ['ROLE_SMM'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.tags.home.title'
         },
         canActivate: [UserRouteAccessService]
@@ -24,7 +24,7 @@ export const tagsRoute: Routes = [
         path: 'tags/:id',
         component: TagsDetailComponent,
         data: {
-            authorities: ['ROLE_SMM'],
+            authorities: ['ROLE_USER'],
             pageTitle: 'dtoApp.tags.home.title'
         },
         canActivate: [UserRouteAccessService]
@@ -36,7 +36,7 @@ export const tagsPopupRoute: Routes = [
         path: 'tags-new',
         component: TagsPopupComponent,
         data: {
-            authorities: ['ROLE_SMM'],
+            authorities: ['ROLE_USER'],
             pageTitle: 'dtoApp.tags.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const tagsPopupRoute: Routes = [
         path: 'tags/:id/edit',
         component: TagsPopupComponent,
         data: {
-            authorities: ['ROLE_SMM'],
+            authorities: ['ROLE_USER'],
             pageTitle: 'dtoApp.tags.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -56,7 +56,7 @@ export const tagsPopupRoute: Routes = [
         path: 'tags/:id/delete',
         component: TagsDeletePopupComponent,
         data: {
-            authorities: ['ROLE_SMM'],
+            authorities: ['ROLE_USER'],
             pageTitle: 'dtoApp.tags.home.title'
         },
         canActivate: [UserRouteAccessService],

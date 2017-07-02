@@ -16,7 +16,7 @@ export const addressRoute: Routes = [
         path: 'address',
         component: AddressComponent,
         data: {
-            authorities: ['ROLE_ADMIN'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.address.home.title'
         },
         canActivate: [UserRouteAccessService]

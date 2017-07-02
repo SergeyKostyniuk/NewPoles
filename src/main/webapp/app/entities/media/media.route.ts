@@ -16,7 +16,7 @@ export const mediaRoute: Routes = [
         path: 'media',
         component: MediaComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.media.home.title'
         },
         canActivate: [UserRouteAccessService]

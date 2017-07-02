@@ -16,7 +16,7 @@ export const personalInformationRoute: Routes = [
         path: 'personal-information',
         component: PersonalInformationComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.personalInformation.home.title'
         },
         canActivate: [UserRouteAccessService]

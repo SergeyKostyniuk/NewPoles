@@ -16,7 +16,7 @@ export const tagForProductRoute: Routes = [
         path: 'tag-for-product',
         component: TagForProductComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_MODERATOR', 'ROLE_SMM'],
             pageTitle: 'dtoApp.tagForProduct.home.title'
         },
         canActivate: [UserRouteAccessService]

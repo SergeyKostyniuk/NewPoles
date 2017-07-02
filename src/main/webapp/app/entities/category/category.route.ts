@@ -24,7 +24,7 @@ export const categoryRoute: Routes = [
         path: 'category/:id',
         component: CategoryDetailComponent,
         data: {
-           // authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER'],
             pageTitle: 'dtoApp.category.home.title'
         },
         canActivate: [UserRouteAccessService]

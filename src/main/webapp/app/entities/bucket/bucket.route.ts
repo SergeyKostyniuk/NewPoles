@@ -36,7 +36,7 @@ export const bucketPopupRoute: Routes = [
         path: 'bucket-new',
         component: BucketPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.bucket.home.title'
         },
         canActivate: [UserRouteAccessService],

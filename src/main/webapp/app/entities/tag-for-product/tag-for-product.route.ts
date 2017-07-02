@@ -36,7 +36,7 @@ export const tagForProductPopupRoute: Routes = [
         path: 'tag-for-product-new',
         component: TagForProductPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.tagForProduct.home.title'
         },
         canActivate: [UserRouteAccessService],

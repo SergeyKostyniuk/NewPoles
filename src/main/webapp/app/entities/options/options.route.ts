@@ -36,7 +36,7 @@ export const optionsPopupRoute: Routes = [
         path: 'options-new',
         component: OptionsPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.options.home.title'
         },
         canActivate: [UserRouteAccessService],

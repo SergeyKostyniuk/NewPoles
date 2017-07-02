@@ -36,7 +36,7 @@ export const personalInformationPopupRoute: Routes = [
         path: 'personal-information-new',
         component: PersonalInformationPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.personalInformation.home.title'
         },
         canActivate: [UserRouteAccessService],

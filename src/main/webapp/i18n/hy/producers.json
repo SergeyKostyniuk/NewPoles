@@ -1,0 +1,24 @@
+{
+    "dtoApp": {
+        "producers" : {
+            "home": {
+                "title": "Producers",
+                "createLabel": "Ստեղծել նոր Producers",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Producers",
+                "search": "Գտնել Producers"
+            },
+            "created": "Նոր Producers ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Producers թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Producers հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Producers {{ id }}?"
+            },
+            "detail": {
+                "title": "Producers"
+            },
+            "name": "Name",
+            "country": "Country",
+            "consignment": "Consignment"
+        }
+    }
+}

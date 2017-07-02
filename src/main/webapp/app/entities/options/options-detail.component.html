@@ -1,0 +1,41 @@
+
+<div *ngIf="options">
+    <h2><span jhiTranslate="dtoApp.options.detail.title">Options</span> {{options.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="dtoApp.options.color">Color</span></dt>
+        <dd>
+            <span>{{options.color}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.options.weight">Weight</span></dt>
+        <dd>
+            <span>{{options.weight}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.options.metal">Metal</span></dt>
+        <dd>
+            <span>{{options.metal}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.options.size">Size</span></dt>
+        <dd>
+            <span>{{options.size}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.options.length">Length</span></dt>
+        <dd>
+            <span>{{options.length}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'options/'+ options.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

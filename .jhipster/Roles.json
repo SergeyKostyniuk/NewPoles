@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "manager",
+            "otherEntityName": "manager",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "role",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170626144340",
+    "entityTableName": "roles",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

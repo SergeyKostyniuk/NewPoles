@@ -1,0 +1,194 @@
+entity Customer { 
+	subScription Boolean,
+    sosialConnect SocialConnect,
+	sessionId String
+}
+
+entity LoginOptions {
+	login String  required, 
+    password String required  
+}
+
+entity StaticPages {
+}
+
+entity Manager {  
+}
+
+entity Bucket {
+	name String,
+    date ZonedDateTime,
+    sum BigDecimal, //or double
+    orderNumber Integer, 
+    count Integer,   	
+    status Status, 
+    consignmentNote String
+}
+
+entity AddressShipping {
+	country String required,
+	city String  required, 
+	state String,			
+    region String,
+	street String required, 
+	building String required, 
+	appartment String 
+}
+
+entity Seen {
+    date LocalDate
+}
+
+entity WishList {
+	date LocalDate 
+}
+
+entity Address {
+	country String required,
+	city String required, 
+	state String,			
+    region String,
+	street String required, 
+	building String required, 
+	appartment String 
+}
+
+entity Avatar {
+	usersImage ImageBlob
+}
+
+entity PersonalInformation {
+	firstName String  required, 
+  	lastName String required, 
+    middleName String, 
+    sex Sex,
+    phone String  required,  
+    email String  required, 
+    dateBirth LocalDate  
+}
+
+entity Products {
+	name String required,
+    price BigDecimal required,
+	sale Integer, 
+	rating Double,
+	fresh Boolean,
+    description String
+}
+
+entity Tags {
+	name String required
+}
+
+entity  Consignment {
+	price BigDecimal required
+}
+
+entity Storage {
+	name String required,
+	actualite Boolean required,
+	quantity Integer required
+}
+
+entity  Producers {
+	name String required,
+	country String required
+}
+
+entity Category {
+	name String required
+}
+
+entity SubCategory {
+	name String required
+}
+
+entity Media {
+	name String required,
+	type String required,
+	contentType String required,
+	location String required,
+	size String required
+}
+
+entity Comments {
+	comments String,
+    date ZonedDateTime
+}
+
+entity Options {
+	color Integer required,
+    weight Double required,
+    metal String required,
+    size Double,
+    length Integer
+}
+
+entity TagForProduct {
+}
+
+entity ProductInBucket {
+}
+
+entity Roles {
+	role String 
+}
+
+enum Sex {
+	MAN, WOMAN
+}
+
+enum SocialConnect {
+	DEFAULT, GOOGLE, FACEBOOK, TWITTER
+}
+
+enum Status {
+	WAIT, PROCESSING, CHECKED, FILLED, SUCCESS, FAILURE, REJECT
+}
+
+relationship OneToOne {
+	Seen {products} to Products,
+	WishList {product} to Products,
+	Customer {loginOptions} to LoginOptions,
+    Manager {loginOptions} to LoginOptions,
+    Customer {address} to Address,
+    Customer {personalInfo} to PersonalInformation,
+    Manager {personalInfo} to PersonalInformation,
+    Manager {avatar} to Avatar,
+    Customer {avatar} to Avatar,
+    Bucket {addressShipping} to AddressShipping,
+    Products {options} to Options    
+}
+
+relationship OneToMany {
+	Customer {seen} to Seen,    
+ 	Manager {maneger} to Bucket,
+    Customer {wishList} to WishList,
+    Products {media} to Media,
+    Products {comments} to Comments,
+    Customer {comments} to Comments,
+    Category {subCat} to SubCategory,
+    SubCategory {product} to Products,    
+    Producers {consignment} to Consignment,
+    Storage {consignment} to Consignment,
+    Consignment {products} to Products,    
+    Products {productInBucket} to ProductInBucket,
+    Bucket {productInBucket} to ProductInBucket,    
+    Products {tagForProduct} to TagForProduct,
+    Tags {tagForProduct} to TagForProduct,
+    Manager {roles} to Roles
+}
+
+relationship ManyToOne {
+	Bucket {customer} to Customer
+}
+
+// Set pagination options
+paginate Products, Bucket, Customer with infinite-scroll
+//paginate Consignment with pagination
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+// Set an angular suffix
+// angularSuffix * with mySuffix

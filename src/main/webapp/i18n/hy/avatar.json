@@ -1,0 +1,22 @@
+{
+    "dtoApp": {
+        "avatar" : {
+            "home": {
+                "title": "Avatars",
+                "createLabel": "Ստեղծել նոր Avatar",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Avatar",
+                "search": "Գտնել Avatar"
+            },
+            "created": "Նոր Avatar ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Avatar թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Avatar հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Avatar {{ id }}?"
+            },
+            "detail": {
+                "title": "Avatar"
+            },
+            "usersImage": "Users Image"
+        }
+    }
+}

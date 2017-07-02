@@ -1,0 +1,21 @@
+{
+    "dtoApp": {
+        "staticPages" : {
+            "home": {
+                "title": "Static Pages",
+                "createLabel": "Ստեղծել նոր Static Pages",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Static Pages",
+                "search": "Գտնել Static Pages"
+            },
+            "created": "Նոր Static Pages ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Static Pages թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Static Pages հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Static Pages {{ id }}?"
+            },
+            "detail": {
+                "title": "Static Pages"
+            }
+        }
+    }
+}

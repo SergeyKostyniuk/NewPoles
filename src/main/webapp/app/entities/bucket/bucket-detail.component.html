@@ -1,0 +1,67 @@
+
+<div *ngIf="bucket">
+    <h2><span jhiTranslate="dtoApp.bucket.detail.title">Bucket</span> {{bucket.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="dtoApp.bucket.name">Name</span></dt>
+        <dd>
+            <span>{{bucket.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.date">Date</span></dt>
+        <dd>
+            <span>{{bucket.date | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.sum">Sum</span></dt>
+        <dd>
+            <span>{{bucket.sum}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.orderNumber">Order Number</span></dt>
+        <dd>
+            <span>{{bucket.orderNumber}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.count">Count</span></dt>
+        <dd>
+            <span>{{bucket.count}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.status">Status</span></dt>
+        <dd>
+            <span jhiTranslate="{{'dtoApp.Status.' + bucket.status}}">{{bucket.status}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.consignmentNote">Consignment Note</span></dt>
+        <dd>
+            <span>{{bucket.consignmentNote}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.manager">Manager</span></dt>
+        <dd>
+            <div *ngIf="bucket.managerId">
+                <a [routerLink]="['/manager', bucket.managerId]">{{bucket.managerId}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.addressShipping">Address Shipping</span></dt>
+        <dd>
+            <div *ngIf="bucket.addressShippingId">
+                <a [routerLink]="['/address-shipping', bucket.addressShippingId]">{{bucket.addressShippingId}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.bucket.customer">Customer</span></dt>
+        <dd>
+            <div *ngIf="bucket.customerId">
+                <a [routerLink]="['/customer', bucket.customerId]">{{bucket.customerId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'bucket/'+ bucket.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

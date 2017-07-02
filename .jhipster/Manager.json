@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "loginOptions",
+            "otherEntityName": "loginOptions",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "manager"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "personalInfo",
+            "otherEntityName": "personalInformation",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "manager"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "avatar",
+            "otherEntityName": "avatar",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "manager"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "maneger",
+            "otherEntityName": "bucket",
+            "otherEntityRelationshipName": "manager"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "roles",
+            "otherEntityName": "roles",
+            "otherEntityRelationshipName": "manager"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20170626144320",
+    "entityTableName": "manager",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

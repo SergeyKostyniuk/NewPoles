@@ -1,0 +1,25 @@
+{
+    "dtoApp": {
+        "consignment" : {
+            "home": {
+                "title": "Consignments",
+                "createLabel": "Ստեղծել նոր Consignment",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Consignment",
+                "search": "Գտնել Consignment"
+            },
+            "created": "Նոր Consignment ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Consignment թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Consignment հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Consignment {{ id }}?"
+            },
+            "detail": {
+                "title": "Consignment"
+            },
+            "price": "Price",
+            "products": "Products",
+            "storage": "Storage",
+            "producers": "Producers"
+        }
+    }
+}

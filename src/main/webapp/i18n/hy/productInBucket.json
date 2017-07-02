@@ -1,0 +1,23 @@
+{
+    "dtoApp": {
+        "productInBucket" : {
+            "home": {
+                "title": "Product In Buckets",
+                "createLabel": "Ստեղծել նոր Product In Bucket",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Product In Bucket",
+                "search": "Գտնել Product In Bucket"
+            },
+            "created": "Նոր Product In Bucket ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Product In Bucket թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Product In Bucket հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Product In Bucket {{ id }}?"
+            },
+            "detail": {
+                "title": "Product In Bucket"
+            },
+            "bucket": "Bucket",
+            "products": "Products"
+        }
+    }
+}

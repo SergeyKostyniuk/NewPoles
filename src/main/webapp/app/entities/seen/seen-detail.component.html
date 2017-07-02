@@ -1,0 +1,37 @@
+
+<div *ngIf="seen">
+    <h2><span jhiTranslate="dtoApp.seen.detail.title">Seen</span> {{seen.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="dtoApp.seen.date">Date</span></dt>
+        <dd>
+            <span>{{seen.date | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.seen.customer">Customer</span></dt>
+        <dd>
+            <div *ngIf="seen.customerId">
+                <a [routerLink]="['/customer', seen.customerId]">{{seen.customerId}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.seen.products">Products</span></dt>
+        <dd>
+            <div *ngIf="seen.productsId">
+                <a [routerLink]="['/products', seen.productsId]">{{seen.productsId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'seen/'+ seen.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

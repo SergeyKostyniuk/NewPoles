@@ -1,0 +1,24 @@
+{
+    "dtoApp": {
+        "wishList" : {
+            "home": {
+                "title": "Wish Lists",
+                "createLabel": "Ստեղծել նոր Wish List",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Wish List",
+                "search": "Գտնել Wish List"
+            },
+            "created": "Նոր Wish List ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Wish List թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Wish List հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Wish List {{ id }}?"
+            },
+            "detail": {
+                "title": "Wish List"
+            },
+            "date": "Date",
+            "customer": "Customer",
+            "product": "Product"
+        }
+    }
+}

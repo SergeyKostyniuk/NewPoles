@@ -1,0 +1,11 @@
+{
+    "dtoApp": {
+        "SocialConnect" : {
+            "null": "",
+            "DEFAULT": "DEFAULT",
+            "GOOGLE": "GOOGLE",
+            "FACEBOOK": "FACEBOOK",
+            "TWITTER": "TWITTER"
+        }
+    }
+}

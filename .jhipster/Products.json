@@ -1,0 +1,86 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "options",
+            "otherEntityName": "options",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "products"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "media",
+            "otherEntityName": "media",
+            "otherEntityRelationshipName": "products"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "comments",
+            "otherEntityName": "comments",
+            "otherEntityRelationshipName": "products"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "productInBucket",
+            "otherEntityName": "productInBucket",
+            "otherEntityRelationshipName": "products"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "tagForProduct",
+            "otherEntityName": "tagForProduct",
+            "otherEntityRelationshipName": "products"
+        },
+        {
+            "relationshipName": "consignment",
+            "otherEntityName": "consignment",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "subCategory",
+            "otherEntityName": "subCategory",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "sale",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "rating",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fresh",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170626144328",
+    "entityTableName": "products",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl"
+}

@@ -1,0 +1,14 @@
+{
+    "dtoApp": {
+        "Status" : {
+            "null": "",
+            "WAIT": "WAIT",
+            "PROCESSING": "PROCESSING",
+            "CHECKED": "CHECKED",
+            "FILLED": "FILLED",
+            "SUCCESS": "SUCCESS",
+            "FAILURE": "FAILURE",
+            "REJECT": "REJECT"
+        }
+    }
+}

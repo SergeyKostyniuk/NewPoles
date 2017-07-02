@@ -1,0 +1,26 @@
+{
+    "dtoApp": {
+        "options" : {
+            "home": {
+                "title": "Options",
+                "createLabel": "Ստեղծել նոր Options",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Options",
+                "search": "Գտնել Options"
+            },
+            "created": "Նոր Options ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Options թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Options հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Options {{ id }}?"
+            },
+            "detail": {
+                "title": "Options"
+            },
+            "color": "Color",
+            "weight": "Weight",
+            "metal": "Metal",
+            "size": "Size",
+            "length": "Length"
+        }
+    }
+}

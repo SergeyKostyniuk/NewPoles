@@ -1,0 +1,40 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "color",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "weight",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "metal",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "size",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "length",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170626144337",
+    "entityTableName": "options",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

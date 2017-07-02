@@ -1,0 +1,27 @@
+{
+    "dtoApp": {
+        "media" : {
+            "home": {
+                "title": "Media",
+                "createLabel": "Ստեղծել նոր Media",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Media",
+                "search": "Գտնել Media"
+            },
+            "created": "Նոր Media ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Media թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Media հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Media {{ id }}?"
+            },
+            "detail": {
+                "title": "Media"
+            },
+            "name": "Name",
+            "type": "Type",
+            "contentType": "Content Type",
+            "location": "Location",
+            "size": "Size",
+            "products": "Products"
+        }
+    }
+}

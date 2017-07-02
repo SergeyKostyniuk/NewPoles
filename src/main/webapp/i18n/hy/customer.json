@@ -1,0 +1,31 @@
+{
+    "dtoApp": {
+        "customer" : {
+            "home": {
+                "title": "Customers",
+                "createLabel": "Ստեղծել նոր Customer",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Customer",
+                "search": "Գտնել Customer"
+            },
+            "created": "Նոր Customer ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Customer թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Customer հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Customer {{ id }}?"
+            },
+            "detail": {
+                "title": "Customer"
+            },
+            "subScription": "Sub Scription",
+            "sosialConnect": "Sosial Connect",
+            "sessionId": "Session Id",
+            "loginOptions": "Login Options",
+            "address": "Address",
+            "personalInfo": "Personal Info",
+            "avatar": "Avatar",
+            "seen": "Seen",
+            "wishList": "Wish List",
+            "comments": "Comments"
+        }
+    }
+}

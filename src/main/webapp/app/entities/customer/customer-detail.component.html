@@ -1,0 +1,57 @@
+
+<div *ngIf="customer">
+    <h2><span jhiTranslate="dtoApp.customer.detail.title">Customer</span> {{customer.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="dtoApp.customer.subScription">Sub Scription</span></dt>
+        <dd>
+            <span>{{customer.subScription}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.customer.sosialConnect">Sosial Connect</span></dt>
+        <dd>
+            <span jhiTranslate="{{'dtoApp.SocialConnect.' + customer.sosialConnect}}">{{customer.sosialConnect}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.customer.sessionId">Session Id</span></dt>
+        <dd>
+            <span>{{customer.sessionId}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.customer.loginOptions">Login Options</span></dt>
+        <dd>
+            <div *ngIf="customer.loginOptionsId">
+                <a [routerLink]="['/login-options', customer.loginOptionsId]">{{customer.loginOptionsId}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.customer.address">Address</span></dt>
+        <dd>
+            <div *ngIf="customer.addressId">
+                <a [routerLink]="['/address', customer.addressId]">{{customer.addressId}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.customer.personalInfo">Personal Info</span></dt>
+        <dd>
+            <div *ngIf="customer.personalInfoId">
+                <a [routerLink]="['/personal-information', customer.personalInfoId]">{{customer.personalInfoId}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.customer.avatar">Avatar</span></dt>
+        <dd>
+            <div *ngIf="customer.avatarId">
+                <a [routerLink]="['/avatar', customer.avatarId]">{{customer.avatarId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'customer/'+ customer.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

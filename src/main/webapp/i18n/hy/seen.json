@@ -1,0 +1,24 @@
+{
+    "dtoApp": {
+        "seen" : {
+            "home": {
+                "title": "Seens",
+                "createLabel": "Ստեղծել նոր Seen",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Seen",
+                "search": "Գտնել Seen"
+            },
+            "created": "Նոր Seen ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Seen թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Seen հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Seen {{ id }}?"
+            },
+            "detail": {
+                "title": "Seen"
+            },
+            "date": "Date",
+            "customer": "Customer",
+            "products": "Products"
+        }
+    }
+}

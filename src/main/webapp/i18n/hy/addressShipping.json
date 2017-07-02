@@ -1,0 +1,28 @@
+{
+    "dtoApp": {
+        "addressShipping" : {
+            "home": {
+                "title": "Address Shippings",
+                "createLabel": "Ստեղծել նոր Address Shipping",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Address Shipping",
+                "search": "Գտնել Address Shipping"
+            },
+            "created": "Նոր Address Shipping ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Address Shipping թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Address Shipping հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Address Shipping {{ id }}?"
+            },
+            "detail": {
+                "title": "Address Shipping"
+            },
+            "country": "Country",
+            "city": "City",
+            "state": "State",
+            "region": "Region",
+            "street": "Street",
+            "building": "Building",
+            "appartment": "Appartment"
+        }
+    }
+}

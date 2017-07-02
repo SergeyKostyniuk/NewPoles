@@ -1,0 +1,25 @@
+{
+    "dtoApp": {
+        "comments" : {
+            "home": {
+                "title": "Comments",
+                "createLabel": "Ստեղծել նոր Comments",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Comments",
+                "search": "Գտնել Comments"
+            },
+            "created": "Նոր Comments ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Comments թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Comments հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Comments {{ id }}?"
+            },
+            "detail": {
+                "title": "Comments"
+            },
+            "comments": "Comments",
+            "date": "Date",
+            "customer": "Customer",
+            "products": "Products"
+        }
+    }
+}

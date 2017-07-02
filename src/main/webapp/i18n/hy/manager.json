@@ -1,0 +1,26 @@
+{
+    "dtoApp": {
+        "manager" : {
+            "home": {
+                "title": "Managers",
+                "createLabel": "Ստեղծել նոր Manager",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Manager",
+                "search": "Գտնել Manager"
+            },
+            "created": "Նոր Manager ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Manager թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Manager հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Manager {{ id }}?"
+            },
+            "detail": {
+                "title": "Manager"
+            },
+            "loginOptions": "Login Options",
+            "personalInfo": "Personal Info",
+            "avatar": "Avatar",
+            "maneger": "Maneger",
+            "roles": "Roles"
+        }
+    }
+}

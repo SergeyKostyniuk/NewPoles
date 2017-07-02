@@ -1,0 +1,23 @@
+{
+    "dtoApp": {
+        "tagForProduct" : {
+            "home": {
+                "title": "Tag For Products",
+                "createLabel": "Ստեղծել նոր Tag For Product",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Tag For Product",
+                "search": "Գտնել Tag For Product"
+            },
+            "created": "Նոր Tag For Product ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Tag For Product թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Tag For Product հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Tag For Product {{ id }}?"
+            },
+            "detail": {
+                "title": "Tag For Product"
+            },
+            "products": "Products",
+            "tags": "Tags"
+        }
+    }
+}

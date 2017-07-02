@@ -1,0 +1,28 @@
+{
+    "dtoApp": {
+        "personalInformation" : {
+            "home": {
+                "title": "Personal Informations",
+                "createLabel": "Ստեղծել նոր Personal Information",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Personal Information",
+                "search": "Գտնել Personal Information"
+            },
+            "created": "Նոր Personal Information ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Personal Information թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Personal Information հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Personal Information {{ id }}?"
+            },
+            "detail": {
+                "title": "Personal Information"
+            },
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "middleName": "Middle Name",
+            "sex": "Sex",
+            "phone": "Phone",
+            "email": "Email",
+            "dateBirth": "Date Birth"
+        }
+    }
+}

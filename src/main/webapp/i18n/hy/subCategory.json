@@ -1,0 +1,24 @@
+{
+    "dtoApp": {
+        "subCategory" : {
+            "home": {
+                "title": "Sub Categories",
+                "createLabel": "Ստեղծել նոր Sub Category",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Sub Category",
+                "search": "Գտնել Sub Category"
+            },
+            "created": "Նոր Sub Category ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Sub Category թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Sub Category հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Sub Category {{ id }}?"
+            },
+            "detail": {
+                "title": "Sub Category"
+            },
+            "name": "Name",
+            "category": "Category",
+            "product": "Product"
+        }
+    }
+}

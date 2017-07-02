@@ -1,0 +1,10 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [],
+    "changelogDate": "20170626144319",
+    "entityTableName": "static_pages",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

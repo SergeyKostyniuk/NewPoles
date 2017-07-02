@@ -1,0 +1,32 @@
+{
+    "dtoApp": {
+        "bucket" : {
+            "home": {
+                "title": "Buckets",
+                "createLabel": "Ստեղծել նոր Bucket",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Bucket",
+                "search": "Գտնել Bucket"
+            },
+            "created": "Նոր Bucket ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Bucket թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Bucket հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Bucket {{ id }}?"
+            },
+            "detail": {
+                "title": "Bucket"
+            },
+            "name": "Name",
+            "date": "Date",
+            "sum": "Sum",
+            "orderNumber": "Order Number",
+            "count": "Count",
+            "status": "Status",
+            "consignmentNote": "Consignment Note",
+            "manager": "Manager",
+            "addressShipping": "Address Shipping",
+            "productInBucket": "Product In Bucket",
+            "customer": "Customer"
+        }
+    }
+}

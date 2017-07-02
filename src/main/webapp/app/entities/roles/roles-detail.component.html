@@ -1,0 +1,31 @@
+
+<div *ngIf="roles">
+    <h2><span jhiTranslate="dtoApp.roles.detail.title">Roles</span> {{roles.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="dtoApp.roles.role">Role</span></dt>
+        <dd>
+            <span>{{roles.role}}</span>
+        </dd>
+        <dt><span jhiTranslate="dtoApp.roles.manager">Manager</span></dt>
+        <dd>
+            <div *ngIf="roles.managerId">
+                <a [routerLink]="['/manager', roles.managerId]">{{roles.managerId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'roles/'+ roles.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

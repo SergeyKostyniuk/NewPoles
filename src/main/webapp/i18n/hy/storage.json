@@ -1,0 +1,25 @@
+{
+    "dtoApp": {
+        "storage" : {
+            "home": {
+                "title": "Storages",
+                "createLabel": "Ստեղծել նոր Storage",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Storage",
+                "search": "Գտնել Storage"
+            },
+            "created": "Նոր Storage ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Storage թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Storage հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Storage {{ id }}?"
+            },
+            "detail": {
+                "title": "Storage"
+            },
+            "name": "Name",
+            "actualite": "Actualite",
+            "quantity": "Quantity",
+            "consignment": "Consignment"
+        }
+    }
+}

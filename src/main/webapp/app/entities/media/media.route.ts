@@ -36,7 +36,7 @@ export const mediaPopupRoute: Routes = [
         path: 'media-new',
         component: MediaPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.media.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const mediaPopupRoute: Routes = [
         path: 'media/:id/edit',
         component: MediaPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_SMM'],
             pageTitle: 'dtoApp.media.home.title'
         },
         canActivate: [UserRouteAccessService],

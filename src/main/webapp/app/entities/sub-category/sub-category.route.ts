@@ -36,7 +36,7 @@ export const subCategoryPopupRoute: Routes = [
         path: 'sub-category-new',
         component: SubCategoryPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.subCategory.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const subCategoryPopupRoute: Routes = [
         path: 'sub-category/:id/edit',
         component: SubCategoryPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_SMM'],
             pageTitle: 'dtoApp.subCategory.home.title'
         },
         canActivate: [UserRouteAccessService],

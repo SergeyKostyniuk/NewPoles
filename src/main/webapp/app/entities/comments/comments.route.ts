@@ -36,7 +36,7 @@ export const commentsPopupRoute: Routes = [
         path: 'comments-new',
         component: CommentsPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.comments.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const commentsPopupRoute: Routes = [
         path: 'comments/:id/edit',
         component: CommentsPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_SMM'],
             pageTitle: 'dtoApp.comments.home.title'
         },
         canActivate: [UserRouteAccessService],

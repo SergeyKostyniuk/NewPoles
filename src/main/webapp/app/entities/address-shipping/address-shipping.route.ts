@@ -36,7 +36,7 @@ export const addressShippingPopupRoute: Routes = [
         path: 'address-shipping-new',
         component: AddressShippingPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.addressShipping.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const addressShippingPopupRoute: Routes = [
         path: 'address-shipping/:id/edit',
         component: AddressShippingPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_SMM'],
             pageTitle: 'dtoApp.addressShipping.home.title'
         },
         canActivate: [UserRouteAccessService],

@@ -36,7 +36,7 @@ export const staticPagesPopupRoute: Routes = [
         path: 'static-pages-new',
         component: StaticPagesPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.staticPages.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const staticPagesPopupRoute: Routes = [
         path: 'static-pages/:id/edit',
         component: StaticPagesPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_SMM'],
             pageTitle: 'dtoApp.staticPages.home.title'
         },
         canActivate: [UserRouteAccessService],

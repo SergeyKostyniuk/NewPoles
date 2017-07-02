@@ -36,7 +36,7 @@ export const addressPopupRoute: Routes = [
         path: 'address-new',
         component: AddressPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.address.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const addressPopupRoute: Routes = [
         path: 'address/:id/edit',
         component: AddressPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN'],
+            authorities: ['ROLE_USER', 'ROLE_SMM'],
             pageTitle: 'dtoApp.address.home.title'
         },
         canActivate: [UserRouteAccessService],

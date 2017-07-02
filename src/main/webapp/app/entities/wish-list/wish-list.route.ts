@@ -36,7 +36,7 @@ export const wishListPopupRoute: Routes = [
         path: 'wish-list-new',
         component: WishListPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.wishList.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const wishListPopupRoute: Routes = [
         path: 'wish-list/:id/edit',
         component: WishListPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_SMM'],
             pageTitle: 'dtoApp.wishList.home.title'
         },
         canActivate: [UserRouteAccessService],

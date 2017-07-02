@@ -36,7 +36,7 @@ export const avatarPopupRoute: Routes = [
         path: 'avatar-new',
         component: AvatarPopupComponent,
         data: {
-            authorities: ['ROLE_ADMIN', 'ROLE_MODERATOR'],
+            authorities: ['ROLE_USER', 'ROLE_MODERATOR'],
             pageTitle: 'dtoApp.avatar.home.title'
         },
         canActivate: [UserRouteAccessService],
@@ -46,7 +46,7 @@ export const avatarPopupRoute: Routes = [
         path: 'avatar/:id/edit',
         component: AvatarPopupComponent,
         data: {
-            authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER', 'ROLE_SMM'],
             pageTitle: 'dtoApp.avatar.home.title'
         },
         canActivate: [UserRouteAccessService],
